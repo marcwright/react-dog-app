@@ -60,6 +60,27 @@ or
 {dog.message ? <img src={dog.message} /> : ''}
 ```
 
+## Add Material UI
+
+[Material CSS](https://materializecss.com/)
+
+`index.html`
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+/>
+
+<div id="app"></div>
+```
+
+`App.js`
+
+```js
+      <button class="btn waves-effect waves-light" onClick={getDog}>
+```
+
 ## Bonus
 
 - Save a history of the dogs
@@ -67,7 +88,3 @@ or
 - Add Material UI
 - [Get multiple Dogs](https://dog.ceo/api/breeds/image/random/3)
 - Refactor the image tag into a seperate Component
-
-```
-
-```

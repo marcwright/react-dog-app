@@ -10,13 +10,15 @@ export default function App() {
     console.log(response);
   };
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start to see some magic happen :)</p>
-      <button onClick={getDog}>Get Dog</button>
+    <div className="container">
+      <h1>Dog API</h1>
+      <button className="btn waves-effect waves-light" onClick={getDog}>
+        Get Dog
+      </button>
       <br />
       {/* {dog.message ? <img src={dog.message} /> : ''} */}
       <img
+        className="materialboxed"
         src={
           dog.message
             ? dog.message
