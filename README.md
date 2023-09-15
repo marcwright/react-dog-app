@@ -1,6 +1,6 @@
 ## Dog App
 
-![](./src/assets/dog-api.png)
+![](./assets/dog-api.png)
 
 - [Dog API](https://dog.ceo/dog-api/)
 - [Stack Blitz Solution](https://stackblitz.com/edit/stackblitz-starters-db21hz?description=A%20create-react-app%20project%20based%20on%20react%20and%20react-dom&file=README.md&file=md!README.md,src%2FApp.js,src%2Fstyle.css&title=React%20Starter)
@@ -44,21 +44,21 @@ img {
 
 ## Conditional Rendering with a ternary
 
-````html
-      <img
-        src={
-          dog.message
-            ? dog.message
-            : 'https://marcwright.github.io/marcwright-jekyll/images/marc_diesel.jpg'
-        }
-      />
-      ```
+```js
+<img
+  src={
+    dog.message
+      ? dog.message
+      : 'https://marcwright.github.io/marcwright-jekyll/images/marc_diesel.jpg'
+  }
+/>
+```
 
-      or
+or
 
-      ```jsx
-    {dog.message ? <img src={dog.message} /> : ''}
-      ```
+```jsx
+{dog.message ? <img src={dog.message} /> : ''}
+```
 
 ## Bonus
 
@@ -66,4 +66,8 @@ img {
 - Add a dropdown menu to choose the breed of dog
 - Add Material UI
 - [Get multiple Dogs](https://dog.ceo/api/breeds/image/random/3)
-````
+- Refactor the image tag into a seperate Component
+
+```
+
+```
