@@ -36,14 +36,17 @@ For this lesson we'll use an online IDE (Interavtice Development Environment) ca
 #### Fetch
 Javascript has a built in method called `fetch()` that starts the process of fetching a resource from a server. The `fetch()` method returns a Promise that resolves to a Response object.
 
-
+<br/>
 
 <details>
-  <summary>YOU DO: What is an API?</summary>
+  <summary>RESEARCH: What is an API?</summary>
 
   > API is an abbreviation for Application Programming Interface. An API is a way for two or more computer programs to communicate with each other. 
   </details>
 
+<br/>
+
+#### Can you think of any examples of APIs that you use every day?
 
 <br/>
 
