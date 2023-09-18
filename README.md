@@ -20,14 +20,16 @@ Our learning objectives are:
 
 ## Getting Started
 
-For this lesson we'll use an online IDE (Interavtice Development Environment) called Stack Blitz. Click on the link below and be sure to select the React - Javascript option like in the screenshot.
+For this lesson we'll use an online IDE (Interavtice Development Environment) called Stack Blitz. Click on the Stack Blitz Starter link below and be sure to select the React - Javascript option like in the screenshot.
 
 - [Stack Blitz Javascript React Starter](https://stackblitz.com/?starters=frontend)
+- [Stack Blitz Solution for reference](https://stackblitz.com/edit/stackblitz-starters-db21hz?description=A%20create-react-app%20project%20based%20on%20react%20and%20react-dom&file=README.md&file=md!README.md,src%2FApp.js,src%2Fstyle.css&title=React%20Starter)
+
 
 ![](./assets/stack-blitz.png)
 
 
-- [Stack Blitz Solution](https://stackblitz.com/edit/stackblitz-starters-db21hz?description=A%20create-react-app%20project%20based%20on%20react%20and%20react-dom&file=README.md&file=md!README.md,src%2FApp.js,src%2Fstyle.css&title=React%20Starter)
+
 
 <br>
 
@@ -37,16 +39,25 @@ For this lesson we'll use an online IDE (Interavtice Development Environment) ca
 Javascript has a built in method called `fetch()` that starts the process of fetching a resource from a server. The `fetch()` method returns a Promise that resolves to a Response object.
 
 <br/>
-
 <details>
-  <summary>RESEARCH: What is an API?</summary>
+  <summary><b>What is an API?</b></summary>
 
   > API is an abbreviation for Application Programming Interface. An API is a way for two or more computer programs to communicate with each other. 
   </details>
 
-<br/>
+<details>
 
-#### Can you think of any examples of APIs that you use every day?
+  <summary><b>Can you think of any examples of APIs that you use every day?</b></summary>
+
+  - Gmail
+  - Google Maps
+  - Amazon Alexa
+  - Expedia / Travel Sites
+  - Google Finance
+  - Apple News
+  - Slack / Discord
+
+  </details>
 
 <br/>
 
@@ -55,25 +66,22 @@ We will use `fetch()` to retreive our image data from the Dog API. As with any A
 - [Fetch Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 - [Dog API](https://dog.ceo/dog-api/)
 
-Luckily, the documentation shows us exactlyy what to expect when we request a random dog image.
+Luckily, the documentation shows us exactly what to expect when we request a random dog image.
 
   ![](./assets/dog-api-fetch.png)
 
-#### What property will we need to access based on the example response object?
-
 <details>
-  <summary>Answer</summary>
+  <summary><b>What property will we need to access based on the example response object?</b></summary>
 
   `response.message`
 
 </details>
 
-
 <br>
 
-## Retrieve a Dog object when the app first renders
+## Make an API request when the app renders
 
-1. First, let's use `fetch` to make a request to the Dog API.
+1. First, let's use `fetch` to make a request to the Dog API. Note - we're gonna use an [async/await](https://javascript.info/async-await) pattern to handle the response.
 
     ```js
     // App.js
@@ -84,9 +92,7 @@ Luckily, the documentation shows us exactlyy what to expect when we request a ra
     };
     ```
 
-1. We'll use a React hook called `useEffect` to invoke `getDog()` when the component initializes,
-
-    - [useEffect](https://react.dev/reference/react/useEffect)
+1. We'll use a React hook named [`useEffect`](https://react.dev/reference/react/useEffect) to invoke `getDog()` when the component initializes.
 
    > According to the React docs - `useEffect` is a React Hook that lets you synchronize a component with an external system.
 
@@ -113,16 +119,17 @@ Luckily, the documentation shows us exactlyy what to expect when we request a ra
     }
     ```
 
+3. Confirm that you're able to see a response in your browser console.
 
 <br>
 
 ## Update the state of the app with `useState`
 
-- [useState](https://react.dev/reference/react/useState)
+- [useState Documentation](https://react.dev/reference/react/useState)
 
   > useState is a React Hook that lets you add a state variable to your component.
 
-  Call useState at the top level of your component to declare a state variable. The convention is to name state variables like [something, setSomething] using array destructuring.
+  Call `useState` at the top level of your component to declare a state variable. The convention is to name state variables like [something, setSomething] using array destructuring.
 
   ```js
   const [state, setState] = useState(initialState);
