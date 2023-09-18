@@ -20,7 +20,7 @@ Our learning objectives are:
 
 ## Getting Started
 
-For this lesson we'll use an online IDE (Interavtice Development Environment) called Stack Blitz. Click on the Stack Blitz Starter link below and be sure to select the React - Javascript option like in the screenshot.
+For this lesson we'll use an online IDE (Interactice Development Environment) called Stack Blitz. Click on the Stack Blitz Starter link below and be sure to select the React - Javascript option like in the screenshot.
 
 - [Stack Blitz Javascript React Starter](https://stackblitz.com/?starters=frontend)
 - [Stack Blitz Solution for reference](https://stackblitz.com/edit/stackblitz-starters-db21hz?description=A%20create-react-app%20project%20based%20on%20react%20and%20react-dom&file=README.md&file=md!README.md,src%2FApp.js,src%2Fstyle.css&title=React%20Starter)
