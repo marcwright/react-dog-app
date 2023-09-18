@@ -121,6 +121,8 @@ Luckily, the documentation shows us exactly what to expect when we request a ran
 
 3. Confirm that you're able to see a response in your browser console.
 
+    ![](./assets/console.png)
+
 <br>
 
 ## Update the state of the app with `useState`
